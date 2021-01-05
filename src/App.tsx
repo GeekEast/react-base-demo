@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import "./styles/App.css";
-import styled from "styled-components";
-import classNames from "classnames";
-import Card from "./components/Card";
+import React from 'react';
+import './styles/App.css';
+import styled from 'styled-components';
+import classNames from 'classnames';
+import Card from './components/Card';
 
-const tickers = ["aapl", "goog", "tsla"];
+const tickers = ['aapl', 'goog', 'tsla'];
 
 const StyledBoard = styled.div.attrs((props) => ({
-  className: classNames("grid grid-cols-24 gap-x-6", props.className),
+  className: classNames('grid grid-cols-24 gap-x-6', props.className),
 }))`
   height: 1000px;
 `;
 
 const StyledBlock = styled.div.attrs((props) => ({
-  className: classNames("bg-gray rounded-md", props.className),
+  className: classNames('bg-gray rounded-md', props.className),
 }))`
   height: 600px;
 `;
 
 const StyledButton = styled.button.attrs((props) => ({
   className: classNames(
-    "bg-blue rounded-md text-white uppercase font-semibold w-full focus:outline-none",
+    'bg-blue rounded-md text-white uppercase font-semibold w-full focus:outline-none',
     props.className
   ),
 }))`
