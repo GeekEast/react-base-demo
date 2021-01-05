@@ -61,7 +61,8 @@
 ```
 
 ### Environment Variables
-- create `.env.development` in the root of project
+- create `.env.development` in the root of project.
+- enter your own credentails from [IEX Cloud](https://iexcloud.io/).
 ```
 REACT_APP_API_KEY=
 REACT_APP_API_URL_BASE=
